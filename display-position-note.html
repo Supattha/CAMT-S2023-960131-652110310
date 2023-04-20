@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+
+    <thead>
+        <style>
+            .playground{
+                width: unset;
+                height: unset;
+                padding: 10px;
+                border: 1px solid black;
+            }
+            .box{
+                width: 50px;
+                height: 50px;
+                background-color:rgba(202, 152, 129, 0.5);
+            }
+        </style>
+    </thead>
+
+    <tbody>
+        <h2>Box Model</h2>
+            <div class="playground">
+                <div
+                    id="simple-box"
+                    style="
+                        background-color: #d3ab9e;
+                        padding: 25px;
+                        "
+                >
+                    <div 
+                        id="box"
+                        style="
+                            padding: 25px;
+                            background-color: #eac9c1;
+                            border: 25px soild #ebd8d0;
+                        "
+                    >
+                        <div
+                            style="
+                            background-color: #fffbff;
+                            "
+                        >Simple box</div>
+                    </div>
+                </div>  
+            </div>
+        
+        <h2>Css Display</h2>
+            <h3>inline</h3>
+            <div class="playground">
+                <div style="display: inline; background-color: #Dabb9f;">
+                inline text1
+                </div>
+                <div style="display: inline; background-color:#9c5d41;">
+                inline text1
+                </div>
+                <div style="display: inline; background-color: #ca9880;">
+                inline text1
+                </div>
+                <div style="display: inline; background-color:#97928a;">
+                inline text1
+                </div>
+                <div style="display: inline; background-color:#d1d4d0;">
+                inline text1
+                </div>
+            </div>
+        
+            <h3>block</h3>
+            <div class="playground">
+                <div style="display: block; background-color: #Dabb9f;">
+                    inline text1
+                    </div>
+                    <div style="display: block; background-color:#9c5d41;">
+                    block text2
+                    </div>
+                    <div style="display: block; background-color: #ca9880;">
+                    block text3
+                    </div>
+                    <div style="display: block; background-color:#97928a;">
+                    block text4
+                    </div>
+                    <div style="display: block; background-color:#d1d4d0;">
+                    block text5
+                    </div>
+            </div>
+            
+            <h3>inline block</h3>
+            <div class="playground">
+                <div style="display: inline-block;">apple</div>
+                <div style="display: inline-block;">orange</div>
+                <div style="display: inline-block;">mango</div>
+                <div style="display: inline-block;">watermelon</div>
+                <div style="display: inline-block;">melon</div>
+            </div>
+
+            <h3>none</h3>
+            <div class="playground">
+                <div style="display: inline-block;">apple</div>
+                <div style="display: inline-block;">orange</div>
+                <div style="display: none;">mango</div>
+                <div style="display: inline-block;">watermelon</div>
+                <div style="display: inline-block;">melon</div>
+            </div>
+
+            <h3>visibility:hedden vs display:none</h3>
+            <div class="playground">
+                <div style="display: inline-block;">apple</div>
+                <div style="display: inline-block;">orange</div>
+                <div style="display: none;">mango</div>
+                <div style="display: inline-block; visibility:hidden;">watermelon</div>
+                <div style="display: inline-block;">melon</div>
+            </div>
+
+            <h2>css position</h2>
+            <h3>satic</h3>
+            <div class="playground">
+                <div class = "box" style="position: satatic;"></div>
+            </div>
+
+            <h3>absolute</h3>
+            <h4>fixed width/height</h4>
+            <div class="playground">
+                <div class = "box" style="position: absolute;"></div>
+            </div>
+
+            <h4>no width/height</h4>
+            <div class="playground">
+                <div class = "box" style="position: absolute; width:100%; height:4px;"></div>
+            </div>
+
+            <h4>fixed width/height + left/top </h4> 
+            <div class= "playground"> 
+                <div style="
+                    position: relative;
+                    border: 1px solid #999;
+                    width: 100%;
+                    height: 100px;
+                    background-color: white;
+                ">
+            
+                    <div style="
+                        border-radius: 50%;
+                        width: 24px;
+                        height: 24px;
+                        background-color: #666;
+                        color: rgb(255, 255, 255);
+                        position: absolute; 
+                        right: -12px;
+                        top:-12px;
+                        text-align: center;
+                        "
+                    >x</div>
+                </div>
+            </div>
+
+            <h4>fixed</h4>
+            <div class="playground">
+                <div class ="box" 
+                    style ="
+                    position: fixed; 
+                    left: 50px; 
+                    top:50px;
+                    ">
+                fixed
+                </div>
+            </div>
+
+            <h4>backdrop</h4>
+            <div class="playgroud">
+                <div style="
+                    position: fixed;
+                    left:0;
+                    right:0;
+                    bottom:0;
+                    top:0;
+                    background-color: rgb(102, 102, 102,0.5);
+                ">
+
+                    <div style="
+                        background-color: white;
+                        color:#9c5d41;
+                        font-size: 32px;
+                        text-align: center;
+                        width: 300px;
+                        margin: 0 auto;
+                        margin-top:50%;
+                    ">
+                        Songkran festival 2023
+                    </div>
+                </div>
+            </div>
+</tbody>  
+</html>
